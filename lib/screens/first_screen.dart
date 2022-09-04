@@ -5,7 +5,7 @@ import 'package:wallet_app/screens/second_screen.dart';
 import 'package:wallet_app/utils/my_button.dart';
 import '../utils/my_card.dart';
 // import '../utils/my_action.dart';
-import '../utils/my_tile.dart';
+import '../utils/my_list_tile.dart';
 
 class FirstScreen extends StatelessWidget {
   FirstScreen({Key? key}) : super(key: key);
@@ -175,21 +175,21 @@ class FirstScreen extends StatelessWidget {
                 ],
               ),
             ),
-            const MyTile(
-                icon: Icons.auto_graph_sharp,
-                colour: Colors.deepPurpleAccent,
-                title: 'Statistics',
-                subtitle: 'Payments and Income'),
-            MyTile(
-                icon: Icons.note_sharp,
-                colour: Colors.cyan.shade300,
-                title: 'Transactions',
-                subtitle: 'Transaction History'),
-            MyTile(
-                icon: Icons.sticky_note_2,
-                colour: Colors.deepOrange.shade300,
-                title: 'To-do',
-                subtitle: 'Sticky notes'),
+            const MyListTile(
+              title: 'Statistics',
+              subtitle: 'Payments and Income',
+              imagePath: 'lib/icons/statistics.png',
+            ),
+            const MyListTile(
+              title: 'Transactions',
+              subtitle: 'Transaction History',
+              imagePath: 'lib/icons/transaction.png',
+            ),
+            const MyListTile(
+              title: 'To-do',
+              subtitle: 'Sticky notes',
+              imagePath: 'lib/icons/todo.png',
+            ),
           ]),
         ),
       ),
